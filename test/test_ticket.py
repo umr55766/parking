@@ -1,6 +1,6 @@
 import unittest
 
-from src.ticket import Ticket
+from src.Ticket import Ticket
 
 
 class TicketTest(unittest.TestCase):

@@ -1,4 +1,4 @@
-from src.ticket import Ticket
+from src.Ticket import Ticket
 
 
 class TicketSystem:

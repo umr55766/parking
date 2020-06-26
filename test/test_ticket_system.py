@@ -1,7 +1,7 @@
 import unittest
 
 from src.TicketSystem import TicketSystem
-from src.ticket import Ticket
+from src.Ticket import Ticket
 
 
 class TicketSystemTest(unittest.TestCase):

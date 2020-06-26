@@ -1,7 +1,7 @@
 import unittest
 
 from src.Driver import Driver
-from src.ticket import Ticket
+from src.Ticket import Ticket
 
 
 class DriverTest(unittest.TestCase):
