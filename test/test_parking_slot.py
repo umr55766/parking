@@ -7,7 +7,7 @@ from src.Vehicle import Vehicle
 class ParkingSlotTest(unittest.TestCase):
     def test_park_vehicle(self):
         # Given
-        vehicle = Vehicle()
+        vehicle = Vehicle("KA-01-HH-2701", "Red")
         parking_slot = ParkingSlot(10)
 
         # When
@@ -18,7 +18,7 @@ class ParkingSlotTest(unittest.TestCase):
 
     def test_unpark_vehicle(self):
         # Given
-        vehicle = Vehicle()
+        vehicle = Vehicle("KA-01-HH-2701", "Red")
         parking_slot = ParkingSlot(10)
         parking_slot.park_vehicle(vehicle)
 

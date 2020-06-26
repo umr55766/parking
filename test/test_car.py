@@ -7,11 +7,14 @@ from src.Vehicle import Vehicle
 
 class CarTest(unittest.TestCase):
     def test_car(self):
-        self.assertTrue(isinstance(Car(), Vehicle))
+        car = Car("KA-01-HH-2701", "Red")
+        self.assertTrue(isinstance(car, Vehicle))
+        self.assertEqual(car._registration_number, "KA-01-HH-2701")
+        self.assertEqual(car._color, "Red")
 
     def test_car_driver(self):
         # Given
-        car = Car()
+        car = Car("KA-01-HH-2701", "Red")
         driver = Driver()
 
         # When

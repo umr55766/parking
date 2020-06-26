@@ -7,7 +7,7 @@ from src.CarParkingSlot import CarParkingSlot
 class CarParkingSlotTest(unittest.TestCase):
     def test_park_vehicle(self):
         # Given
-        car = Car()
+        car = Car("KA-01-HH-2701", "Red")
         parking_slot = CarParkingSlot(10)
 
         # When
