@@ -11,3 +11,6 @@ class ParkingSlot(ABC):
 
     def get_parked_vehicle(self):
         return self._parked_vehicle
+
+    def unpark_vehicle(self):
+        self._parked_vehicle = None

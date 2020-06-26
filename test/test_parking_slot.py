@@ -15,3 +15,15 @@ class ParkingSlotTest(unittest.TestCase):
 
         # Then
         self.assertEqual(parking_slot.get_parked_vehicle(), vehicle)
+
+    def test_unpark_vehicle(self):
+        # Given
+        vehicle = Vehicle()
+        parking_slot = ParkingSlot(10)
+        parking_slot.park_vehicle(vehicle)
+
+        # When
+        parking_slot.unpark_vehicle()
+
+        # Then
+        self.assertEqual(parking_slot.get_parked_vehicle(), None)
