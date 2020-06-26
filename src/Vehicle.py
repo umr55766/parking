@@ -17,3 +17,9 @@ class Vehicle(ABC):
 
     def get_driver(self):
         return self._driver
+
+    def get_color(self):
+        return self._color
+
+    def get_registration_number(self):
+        return self._registration_number

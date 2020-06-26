@@ -11,7 +11,7 @@ class ParkingSlotTest(unittest.TestCase):
         parking_slot = ParkingSlot(10)
 
         # When
-        parking_slot.park_vehicle(vehicle)
+        parking_slot.park(vehicle)
 
         # Then
         self.assertEqual(parking_slot.get_parked_vehicle(), vehicle)
@@ -20,7 +20,7 @@ class ParkingSlotTest(unittest.TestCase):
         # Given
         vehicle = Vehicle("KA-01-HH-2701", "Red")
         parking_slot = ParkingSlot(10)
-        parking_slot.park_vehicle(vehicle)
+        parking_slot.park(vehicle)
 
         # When
         parking_slot.unpark_vehicle()

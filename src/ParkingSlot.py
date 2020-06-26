@@ -6,7 +6,10 @@ class ParkingSlot(ABC):
         self._parked_vehicle = None
         self._serial_number = serial_number
 
-    def park_vehicle(self, vehicle):
+    def get_serial_number(self):
+        return self._serial_number
+
+    def park(self, vehicle):
         self._parked_vehicle = vehicle
 
     def get_parked_vehicle(self):
